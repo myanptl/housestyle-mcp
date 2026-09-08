@@ -1,0 +1,44 @@
+{
+  "name": "housestyle-mcp",
+  "version": "0.1.0",
+  "description": "MCP server that stops AI-built interfaces from looking AI-built — audits CSS for generic-design tells, then fixes them with real Google Fonts data, WCAG/APCA contrast math, OKLCH palettes, and fluid type scales. No API key.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "design",
+    "design-system",
+    "typography",
+    "google-fonts",
+    "font-pairing",
+    "wcag",
+    "apca",
+    "accessibility",
+    "color-contrast",
+    "oklch",
+    "design-tokens",
+    "css",
+    "linter",
+    "claude"
+  ],
+  "author": "Myan Patel (https://github.com/myanptl)",
+  "license": "MIT",
+  "type": "module",
+  "bin": { "housestyle-mcp": "./dist/index.js" },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.11"
+  },
+  "engines": { "node": ">=18" }
+}
