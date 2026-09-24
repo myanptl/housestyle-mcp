@@ -1,0 +1,19 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.myanptl/housestyle-mcp",
+  "title": "housestyle",
+  "description": "Audits CSS for the generic AI-built look, then fixes it: fonts, contrast, palettes, type scales.",
+  "repository": {
+    "url": "https://github.com/myanptl/housestyle-mcp",
+    "source": "github"
+  },
+  "version": "1.0.2",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "housestyle-mcp",
+      "version": "1.0.2",
+      "transport": { "type": "stdio" }
+    }
+  ]
+}

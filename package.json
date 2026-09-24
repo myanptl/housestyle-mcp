@@ -1,6 +1,6 @@
 {
   "name": "housestyle-mcp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "MCP server that stops AI-built interfaces from looking AI-built — audits CSS for generic-design tells, then fixes them with real Google Fonts data, WCAG/APCA contrast math, OKLCH palettes, and fluid type scales. No API key.",
   "keywords": [
     "mcp",
@@ -24,7 +24,7 @@
   "license": "MIT",
   "type": "module",
   "bin": {
-    "housestyle-mcp": "./dist/index.js"
+    "housestyle-mcp": "dist/index.js"
   },
   "files": [
     "dist"
@@ -37,10 +37,10 @@
     "prepublishOnly": "npm run build && npm test"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0"
+    "@modelcontextprotocol/sdk": "^1.30.1"
   },
   "devDependencies": {
-    "@types/node": "^22.20.1",
+    "@types/node": "^22.20.4",
     "typescript": "^5.9.3",
     "vitest": "^4.1.11"
   },
@@ -54,5 +54,6 @@
   "homepage": "https://github.com/myanptl/housestyle-mcp#readme",
   "bugs": {
     "url": "https://github.com/myanptl/housestyle-mcp/issues"
-  }
+  },
+  "mcpName": "io.github.myanptl/housestyle-mcp"
 }
